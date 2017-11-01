@@ -10,5 +10,6 @@ td, th {border: 2px solid #90A9CF; padding: 5px;}
 #pfphead {width: 128px; height: 128px; float: left;}
 header {background-color: #3F426E; color: #90A9CF; padding: 5px;}
 header h1, h3 {text-align: center;}
+h2 {color: #3F426E;}
 
 #disclaimer {font-size: 8px;}

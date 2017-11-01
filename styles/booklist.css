@@ -1,6 +1,6 @@
 .outerbook {width: 145px; float: left; margin: 5px; padding: 5px;}
+.bookcover {width: 135px; height: 200px; background-size: 106%; background-position: center center; background-repeat: no-repeat; border-radius: 10px; text-align: center; background-color: #3F426E; background-image: url(../img/404.jpg);}
 
-.bookcover {width: 135px; height: 200px; background-size: 100%; background-position: center center; background-repeat: no-repeat; border-radius: 10px; text-align: center; background-color: #000000}
 
 /*
  ██████  ██████  ██    ██ ███████ ██████  ███████
@@ -11,5 +11,28 @@
 */
 
 .bookcover#lolita {background-image: url(../img/lolita.jpg);}
+.bookcover#ancillary {background-image: url(../img/ancillary.jpg);}
+.bookcover#artemis {background-image: url(../img/artemis.jpg);}
+.bookcover#blackout {background-image: url(../img/blackout.jpg);}
+.bookcover#thief {background-image: url(../img/thief.jpg);}
+.bookcover#cardinal {background-image: url(../img/cardinal.jpg);}
+.bookcover#ender {background-image: url(../img/ender.jpg);}
+.bookcover#giver {background-image: url(../img/giver.jpg);}
+.bookcover#hobbit {background-image: url(../img/hobbit.jpg);}
+.bookcover#insignia {background-image: url(../img/insignia.jpg);}
+.bookcover#nineteen {background-image: url(../img/1984.jpg);}
+.bookcover#perks {background-image: url(../img/perks.jpg);}
+.bookcover#romantics {background-image: url(../img/romantics.jpg);}
+.bookcover#sleeping {background-image: url(../img/sleeping.jpg);}
+.bookcover#ends {background-image: url(../img/ends.jpg);}
+
+
+/*
+ ██████  ██████  ███    ██ ████████ ███████ ███    ██ ████████
+██      ██    ██ ████   ██    ██    ██      ████   ██    ██
+██      ██    ██ ██ ██  ██    ██    █████   ██ ██  ██    ██
+██      ██    ██ ██  ██ ██    ██    ██      ██  ██ ██    ██
+ ██████  ██████  ██   ████    ██    ███████ ██   ████    ██
+*/
 
 .title {vertical-align: bottom; text-align: center; color: #B37876; font-size: large; font-weight: bold;}
