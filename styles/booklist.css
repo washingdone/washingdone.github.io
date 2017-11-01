@@ -35,4 +35,4 @@
  ██████  ██████  ██   ████    ██    ███████ ██   ████    ██
 */
 
-.title {vertical-align: bottom; text-align: center; color: #B37876; font-size: large; font-weight: bold;}
+.title {width: 135px; vertical-align: bottom; text-align: center; color: #B37876; font-size: large; font-weight: bold;}
