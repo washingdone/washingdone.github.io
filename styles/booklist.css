@@ -1,0 +1,15 @@
+.outerbook {width: 145px; float: left; margin: 5px; padding: 5px;}
+
+.bookcover {width: 135px; height: 200px; background-size: 100%; background-position: center center; background-repeat: no-repeat; border-radius: 10px; text-align: center; background-color: #000000}
+
+/*
+ ██████  ██████  ██    ██ ███████ ██████  ███████
+██      ██    ██ ██    ██ ██      ██   ██ ██
+██      ██    ██ ██    ██ █████   ██████  ███████
+██      ██    ██  ██  ██  ██      ██   ██      ██
+ ██████  ██████    ████   ███████ ██   ██ ███████
+*/
+
+.bookcover#lolita {background-image: url(../img/lolita.jpg);}
+
+.title {vertical-align: bottom; text-align: center; color: #B37876; font-size: large; font-weight: bold;}
