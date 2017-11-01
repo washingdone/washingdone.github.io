@@ -13,3 +13,5 @@ header h1, h3 {text-align: center;}
 h2 {color: #3F426E;}
 
 #disclaimer {font-size: 8px;}
+
+.flexer {display: flex; flex-wrap: wrap;}
