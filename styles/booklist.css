@@ -1,5 +1,7 @@
-.outerbook {width: 145px; float: left; margin: 5px; padding: 5px;}
-.bookcover {width: 135px; height: 200px; background-size: 106%; background-position: center center; background-repeat: no-repeat; border-radius: 10px; text-align: center; background-color: #3F426E; background-image: url(../img/404.jpg);}
+div.flexer div {display: inline-block;}
+.outerbook {width: 226px; margin: 5px; padding: 5px; text-align: center;}
+.bookcover {width: 216px; height: 320px; text-align: center; border-radius: 10px;}
+.bookcover {background-size: 106%; background-position: center center; background-repeat: no-repeat; background-color: #3F426E; background-image: url(../img/404.jpg);}
 
 
 /*
@@ -36,4 +38,6 @@
  ██████  ██████  ██   ████    ██    ███████ ██   ████    ██
 */
 
-.title {width: 135px; vertical-align: bottom; text-align: center; color: #B37876; font-size: large; font-weight: bold;}
+.title {width: 216px; margin: 3px; vertical-align: bottom; text-align: center; color: #B37876; font-size: large; font-weight: bold;}
+.innerbook {width: 208px; height: 312px; background-color: rgba(255,255,255,0.75); border-radius: 9px; opacity: 0; transition: opacity 0.5s linear; padding: 4px;}
+.innerbook:hover {opacity: 1;}
