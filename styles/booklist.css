@@ -38,6 +38,9 @@ div.flexer div {display: inline-block;}
  ██████  ██████  ██   ████    ██    ███████ ██   ████    ██
 */
 
-.title {width: 216px; margin: 3px; vertical-align: bottom; text-align: center; color: #B37876; font-size: large; font-weight: bold;}
-.innerbook {width: 208px; height: 312px; background-color: rgba(255,255,255,0.75); border-radius: 9px; opacity: 0; transition: opacity 0.5s linear; padding: 4px;}
+.title {width: 216px; margin: 3px; vertical-align: bottom; text-align: center; color: #B37876; font-size: large;}
+.innerbook {width: 208px; height: 312px; background-color: rgba(255,255,255,0.75); border-radius: 9px; opacity: 0; transition: opacity 0.5s linear; padding: 4px; overflow: auto;}
 .innerbook:hover {opacity: 1;}
+.innerbook::-webkit-scrollbar {width: 5px; height: 5px;}
+.innerbook::-webkit-scrollbar-track {background: #90A9CF; }
+.innerbook::-webkit-scrollbar-thumb {background: #3F426E; }
