@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>Nathan Taylor &amp; Friends</title>
+
+<meta charset="utf-8">
+<meta name="date" content="06/27/2018">
+<meta name="description" content="NTF Band Site">
+<meta name="keywords" content="nathan taylor, friends, jazz, country">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, nofollow">
+
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="styles/master.css">
+<link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 440px)">
+
+<script src="scripts/wavesurfer.min.js" ></script>
+<script src="scripts/waveplayer.js" ></script>
+</head>
+
+<!-- Inserts music player after page has loaded. This is required because legacy browsers dont support defer -->
+<body onload="loadPlayer()">
+  <div style="background-color: #FF0000; color: #CCCCCC; padding: 5px; text-align: center;">
+    <p>This site was developed by me and a partner in roughly 6.5 hours during the 2018 SkillsUSA National Web Design and Development Competition. We met with a mock client who gave us a description of the ficticious band we were creating a website for. Text, audio, and some of the images used were provided to us as well as a barebones wireframe. A sizeable selection of the Google Fonts database and the waveplayer.js (with documentation) were also provided. No outside internet access was allowed. This version of the site was imported directly from our submitted product to this repo. The only modifications made were this notice and link pathing. No alterations will be made to the rest of this page.</p>
+  </div>
+   <!-- Main Header Area -->
+   <header>
+      <!-- In order to maintain a maximum width of 1280px and have a background on the header -->
+      <div class="inner">
+         <a href="">
+            <img class="logo" src="images/logo.png" alt="Nathan Taylor &amp; Friends Logo" aria-label="This image is the logo of Nathan Taylor and Friends. It is a circle with the letters N and T inside">
+         </a>
+         <nav>
+            <a href="">Home</a>
+            <a href="events">Events</a>
+            <a href="#">Blog</a>
+            <a href="https://facebook.com/NTAndFriends">
+               <img src="images/facebook.svg" alt="Facebook Logo" aria-label="This image is the facebook logo, a square with rounded edges and an F in the center.">
+            </a>
+         </nav>
+      </div>
+   </header>
+
+   <!-- The main content of the page -->
+   <main role="main">
+
+      <!-- The music player -->
+      <section role="music">
+         <article>
+           <span class="musicNew">New Single</span><br />
+           <span class="musicTitle">Delta Bound</span><br />
+           <!-- Allows us to put the button and waveform on one line -->
+           <div class="inner">
+             <div id="control"><img src="images/start.svg" alt="Play/Pause button" role="button" /></div>
+             <div id="visualize"></div>
+           </div>
+         </article>
+      </section>
+
+      <!-- The actual main content in the page -->
+      <section role="description">
+
+         <!-- The tag text and band description -->
+         <article class="center">
+            <p>Born of down-home country folk. Blended with Heartland Jazz. Soaked in Delta Blues.</p>
+            <p>Nathan Taylor & Friends explode with rich sound and purely blended talent. This talent is bathed in a wide range of vintage American blues & roots music, born of the soul of the heartland and the most fortunate front porches of Canton, Illinois.</p>
+            <p>From classic roots songs and blues of the delta to early New Orleans jazz and Nathan Taylor originals, their audiences dance  to soulful spins on the old styles mixed with new music  as they are transported to simpler times, past and present.</p>
+         </article>
+
+         <!-- The members' images and names -->
+         <article id="member-container">
+            <!-- Stored as figures to allow captions -->
+            <figure class="member">
+               <img src="images/members/bannon.jpg" alt="Jason Bannon">
+               <h2>Jason Bannon</h2>
+            </figure>
+            <figure class="member">
+               <img src="images/members/harms.jpg" alt="Larry Harms">
+               <h2>Larry Harms</h2>
+            </figure>
+            <figure class="member">
+               <img src="images/members/kimbrell.jpg" alt="Adam Kimbrell">
+               <h2>Adam Kimbrell</h2>
+            </figure>
+            <figure class="member">
+               <img src="images/members/stoner.jpg" alt="Tom Stoner">
+               <h2>Tom Stoner</h2>
+            </figure>
+            <figure class="member">
+               <img src="images/members/taylor.jpg" alt="Nathan Taylor">
+               <h2>Nathan Taylor</h2>
+            </figure>
+         </article>
+      </section>
+   </main>
+
+   <!-- Simply the live music footer -->
+   <footer>SUPPORT LIVE MUSIC</footer>
+</body>
+</html>

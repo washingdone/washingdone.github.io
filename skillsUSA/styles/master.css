@@ -1,0 +1,330 @@
+/* Fonts */
+@font-face {
+   font-family: "Caveat";
+   font-weight: 400;
+
+   src: url("../fonts/caveat/Caveat-Regular.ttf");
+}
+@font-face {
+   font-family: "Caveat";
+   font-weight: 700;
+
+   src: url("../fonts/caveat/Caveat-Bold.ttf");
+}
+@font-face {
+   font-family: "Assistant";
+   font-weight: 400;
+
+   src: url("../fonts/assistant/Assistant-Regular.ttf");
+}
+
+/* Master */
+/* Change default font and remove padding/margin for positional accuracy */
+* {
+   font-family: "Assistant", "Helvetica Neue", "Verdana", "Arial", sans-serif;
+
+   margin: 0 0 0 0;
+   padding: 0 0 0 0;
+}
+/* Include padding where we want it */
+main, header > .inner {
+   padding: 1rem;
+}
+/* Dark header and foor with a light font color */
+header, footer {
+   color: #FFFFFF;
+   background-color: #333333;
+}
+/* Header and footer will match fonts with the logo */
+header *, footer *, header, footer {
+   font-family: "Times New Roman", serif;
+}
+/* Max width for larger screens */
+main, header > .inner {
+   max-width: 1280px;
+   margin: auto;
+}
+
+/* Header */
+/* Inner header so that we can have a dark bg for the whole header */
+header > .inner {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+
+   -webkit-box-pack: justify;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+/* Make the logo 128px */
+header > .inner > a > .logo {
+   height: 128px;
+}
+/* Make the nav flex and include vendor prefixes */
+header > .inner > nav {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+       flex-direction: row;
+
+   align-items: center;
+   -webkit-box-align: center;
+   -webkit-box-direction: normal;
+   -webkit-box-flex: 100;
+   -webkit-box-orient: horizontal;
+   -webkit-box-pack: end;
+   -ms-flex-align: center;
+   -ms-flex-direction: row;
+   flex-grow: 100;
+   -ms-flex-pack: end;
+   -ms-flex-positive: 100;
+   justify-content: flex-end;
+}
+/* Control the sizes and margins of the links in the nav */
+header > .inner > nav > a {
+   font-size: 1.75rem;
+   font-weight: bold;
+
+   margin-left: 1.75rem;
+
+   text-decoration: none;
+
+   color: #FFFFFF;
+}
+
+/* Music Player Container */
+/* Max width to match the band member images */
+section[role="music"] > article {
+   max-width: 480px;
+   margin: 3rem auto;
+}
+/* Flex the layout of the controls and the waveform */
+section[role="music"] div.inner {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+
+   align-items: center;
+   -webkit-box-align: center;
+   -webkit-box-pack: justify;
+   -ms-flex-align: center;
+   -ms-flex-pack: justify;
+   justify-content: space-between;
+}
+/* Make the title of the song for the waveform pop */
+.musicTitle {
+   font-family: "Caveat", sans-serif;
+   font-weight: bold;
+   font-size: 2.25rem;
+
+   text-transform: uppercase;
+}
+/* Make the waveform fit with its control button */
+#visualize {
+   width: 384px;
+}
+/* Style the control button as a play/pause button */
+#control {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+
+   width: 64px;
+   height: 64px;
+
+   cursor: pointer;
+
+   border-radius: 100%;
+   background-color: #2F2877;
+
+   align-items: center;
+   -webkit-box-align: center;
+   -webkit-box-pack: center;
+   -ms-flex-align: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+}
+/* The icon that we're using for play is off center */
+#control img[src="../images/start.svg"] {
+   margin-left: 5px;
+}
+/* Resize the image inside the play/pause button */
+#control img {
+   width: 40px;
+   height: 40px;
+
+   -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none;
+}
+
+/* Member figure container */
+/* Flex the member figures so that they wrap and size properly */
+#member-container {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+       flex-direction: row;
+
+   margin-top: 3rem;
+
+   -webkit-box-direction: normal;
+   -webkit-box-orient: horizontal;
+   -webkit-box-pack: center;
+   -ms-flex-direction: row;
+   -ms-flex-pack: center;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   justify-content: center;
+}
+/* Make the images circular, give them a border, and resize them for flex */
+figure.member img {
+   -webkit-box-sizing: border-box;
+           box-sizing: border-box;
+   width: 320px;
+   margin: 0.5rem 2rem 0.1rem 2rem;
+
+   border: 0.5rem solid #2F2877;
+   border-radius: 100%;
+}
+/* Resize and change to the alternate font the band member's name */
+figure.member h2 {
+   font-family: "Caveat", sans-serif;
+   font-size: 1.75rem;
+   font-weight: bold;
+
+   text-align: center;
+   text-transform: uppercase;
+}
+
+/* Center the text for the real content */
+section[role="description"] {
+   text-align: center;
+}
+/* Max width for larger screens and margins */
+section[role="description"] article.center {
+   max-width: 576px;
+   margin: 1rem auto;
+
+   text-align: left;
+}
+
+/* Events Page */
+/* Splash image for the events page; flex 25% height, and background image */
+#splash {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+
+   height: 25vh;
+
+   background-image: url("../images/full_band.jpg");
+   background-position: 0px -150px;
+   background-size: cover;
+
+   align-items: center;
+   -webkit-box-align: center;
+   -webkit-box-pack: center;
+   -ms-flex-align: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+}
+/* Set the font and font size of the splash text */
+#splash h1 {
+   font-family: "Assistant", "Helvetica Neue", "Verdana", "Arial", sans-serif;
+   font-size: 4rem;
+   font-weight: bold;
+
+   text-transform: uppercase;
+}
+/* Max width for larger screens */
+#eventBlock {
+   max-width: 576px;
+   margin: auto;
+}
+/* Make the event boxes flex for the text inside to wrap for devices */
+#eventBlock article {
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+       flex-direction: row;
+
+   margin-bottom: 1.25rem;
+
+   align-items: center;
+   -webkit-box-align: center;
+   -webkit-box-direction: normal;
+   -webkit-box-orient: horizontal;
+   -webkit-box-pack: justify;
+   -ms-flex-align: center;
+   -ms-flex-direction: row;
+   -ms-flex-pack: justify;
+   -ms-flex-wrap: wrap;
+       flex-wrap: wrap;
+   justify-content: space-between;
+}
+/* Set the font and wrap settings for the event's title */
+.eventTitle {
+   font-family: "Caveat", sans-serif;
+   font-size: 1.75rem;
+   font-weight: bold;
+
+   width: 75%;
+
+   color: #2F2877;
+
+   -webkit-box-ordinal-group: 2;
+   -ms-flex-order: 1;
+   order: 1;
+}
+/* Set the wrap settings for the date */
+.eventDate {
+   font-size: 1.25em;
+
+   width: 25%;
+
+   text-align: right;
+
+   -webkit-box-ordinal-group: 3;
+   -ms-flex-order: 2;
+   order: 2;
+}
+/* Set the wrap settings for the address */
+.eventAddress {
+   -webkit-box-ordinal-group: 4;
+   -ms-flex-order: 3;
+   order: 3;
+}
+/* Set the wrap settings for the time */
+.eventTime {
+   width: 50%;
+
+   text-align: right;
+
+   -webkit-box-ordinal-group: 5;
+   -ms-flex-order: 4;
+   order: 4;
+}
+
+/* Footer */
+/* Make the footer smaller, but similar to the header */
+footer {
+   font-size: 1.25rem;
+
+   display: -webkit-box;
+   display: -ms-flexbox;
+   display: flex;
+
+   height: 48px;
+   margin-top: 3rem;
+
+   color: #FFFFFF;
+
+   align-items: center;
+   -webkit-box-align: center;
+   -webkit-box-pack: center;
+   -ms-flex-align: center;
+   -ms-flex-pack: center;
+   justify-content: center;
+}

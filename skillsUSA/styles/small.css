@@ -1,0 +1,71 @@
+/* Make the font size better for mobile */
+header > .inner > nav > a {
+   font-size: 1.15rem;
+
+   margin-left: 1.15rem;
+}
+/* Make the font size better for mobile */
+header > .inner > nav > a > img {
+   height: 1.5rem;
+}
+/* Make the font size better for mobile */
+header > .inner > a > .logo {
+   height: 64px;
+}
+
+/* Make the member images smaller for mobile */
+figure.member img {
+   width: 128px;
+   margin: 0.5rem 1rem;
+}
+/* Make the font size better for mobile */
+figure.member h2 {
+   font-size: 1.25rem;
+}
+
+/* Reposition the splash image on the events page */
+#splash {
+   background-position: center;
+}
+/* Adjust the width, font size and wrap settings for mobile */
+.eventTitle {
+   font-size: 1.55rem;
+
+   width: 100%;
+
+   -webkit-box-ordinal-group: 2;
+   -ms-flex-order: 1;
+   order: 1;
+}
+/* Adjust the width, font size and wrap settings for mobile */
+.eventDate {
+   font-size: 1.15em;
+
+   width: 35%;
+
+   text-align: left;
+
+   -webkit-box-ordinal-group: 3;
+   -ms-flex-order: 2;
+   order: 2;
+}
+/* Adjust the width, font size and wrap settings for mobile */
+.eventAddress {
+   width: 100%;
+
+   text-align: left;
+
+   -webkit-box-ordinal-group: 5;
+   -ms-flex-order: 4;
+   order: 4;
+}
+/* Adjust the width, font size and wrap settings for mobile */
+.eventTime {
+   width: 65%;
+
+   text-align: right;
+
+   -webkit-box-ordinal-group: 4;
+   -ms-flex-order: 3;
+   order: 3;
+}
