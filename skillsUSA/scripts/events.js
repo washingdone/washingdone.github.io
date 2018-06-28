@@ -1,6 +1,6 @@
 function loadEvents () {
   var eventBlock = document.getElementById('eventBlock')
-  window.fetch('http://api.webdesigncontest.org/events')
+  window.fetch('https://api.webdesigncontest.org/events')
     .then((response) => {
       // Parse the JSON out of the response
       return response.json()
